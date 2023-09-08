@@ -1,0 +1,69 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.library-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+
+.book-card {
+    width: 200px;           
+    height: 200px;          
+    background-color: #f9f9f9;
+    border: 2px solid #ccc; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;         
+    flex-direction: column;
+    align-items: center;    
+    justify-content: space-evenly; 
+  }
+
+  .book-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    gap: 1rem;
+  }
+  
+
+  
+
+  .newBookBtn {
+    background-color: #3498db; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+
+  }
+
+
+  .newBookBtn:hover {
+    background-color: #2980b9; 
+}
+
+.newBookBtn:active {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.btn-container {
+    margin-bottom: 1rem;
+}
+
+.modal {
+    width: 250px;
+    height: 200px; 
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  
+}
