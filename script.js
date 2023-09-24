@@ -1,9 +1,11 @@
-// vars
+// Constants
 const newBookBtn = document.querySelector('.newBookBtn');
 const modal = document.querySelector('.modal');
 const form = document.getElementById('bookForm');
 const bookGrid = document.querySelector('.book-grid');
-const myLibrary = [];
+
+// Variables
+let myLibrary = [];
 
 // open add book form on click 
 newBookBtn.addEventListener('click', function() {
@@ -33,16 +35,28 @@ form.addEventListener('submit', function(event) {
 })
 
 
-// book object constructor
-function Book(title, author, pages, status, index) {
-
-  this.title = title,
-  this.author = author,
-  this.pages = pages,
-  this.status = status,
-  this.index = index
-
+// book class
+class Book {
+  constructor(title, author, pages, status, index) {
+  this.title = title;
+  this.author = author;
+  this.pages = pages;
+  this.status = status;
+  this.index = index;
+  }
 }
+
+
+// book object constructor
+// function Book(title, author, pages, status, index) {
+
+//   this.title = title,
+//   this.author = author,
+//   this.pages = pages,
+//   this.status = status,
+//   this.index = index
+
+// }
 
 // add book to library array
 function addBookToLibrary(title, author, pages, status) {
