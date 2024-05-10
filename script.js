@@ -46,19 +46,6 @@ class Book {
   }
 }
 
-
-// book object constructor
-// function Book(title, author, pages, status, index) {
-
-//   this.title = title,
-//   this.author = author,
-//   this.pages = pages,
-//   this.status = status,
-//   this.index = index
-
-// }
-
-// add book to library array
 function addBookToLibrary(title, author, pages, status) {
 
     let index = myLibrary.length;
@@ -127,7 +114,7 @@ function clearGrid() {
 
 // reset indexes of library array
 function resetIndexes() {
-  let i=0; 
+  let i = 0; 
 
   myLibrary.forEach( ( book )  => {
     book.index = i;
